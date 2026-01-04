@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;}
+
+
+body {
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+#myphoto {
+    border-radius: 50%;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid #54c0db;
+    margin-top: 10px;
+    width: 400px;
+    height: auto;
+    margin-bottom: 10px;
+}
+   
+
+.div1{
+     margin: 0;
+    padding: 0;
+}
+
+
+#name {
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    padding: 24px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+#textabout {
+    margin-bottom: 0px;
+    color: white;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 300px;
+    margin-right: 300px;
+    word-spacing: 4px;
+    letter-spacing: 1px;
+    border: 3px solid #5483db;
+    border-radius: 12px;
+    padding: 16px 24px;
+    background: rgba(15, 15, 15, 0.85);
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+    
+    font-size: 20px;
+
+}
+
+#logo {
+    position: absolute;
+  top: 20px;
+  left: 40px;
+  width: 200px;         /* Adjust as needed */
+  height: auto;
+  margin: 0;
+  display: block;
+
+
+}
+
+/*#head {
+    color: aliceblue;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 20px;
+    font-size: 80px;
+    text-decoration-line: none;
+    margin-bottom: 50px;
+
+
+}*/
+ #head{color: rgb(255, 255, 255);
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    font-size: 40px;
+    text-decoration-line: none;
+    margin-bottom: 2px;
+    margin-top: 2px;
+ }

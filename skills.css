@@ -1,0 +1,109 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+    margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.div1 {
+  margin: 0;
+  padding: 0;
+}
+
+
+#text1{
+     color: rgb(255, 255, 255);
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    font-size: 40px;
+    text-decoration-line: none;
+    margin-bottom: 0;
+    margin-top: 50px;
+   border: none;
+   background: none;
+   margin-left: auto;
+   margin-right: auto;
+   
+
+}
+
+
+   #logo {
+  position: absolute;
+  top: 20px;
+  left: 40px;
+  width: 200px;         /* Adjust as needed */
+  height: auto;
+  margin: 0;
+  display: block;
+ 
+}
+
+  
+
+  #image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px; /* Adjust as needed */
+  margin: 0;         /* Remove default margin */
+  padding: 0;
+}
+
+
+figure#image {
+  margin: 0; /* Remove extra margin from figure */
+  padding: 0;
+  display: flex;
+  margin-top: 40px;
+}
+
+#image img {
+  width: 200px;         /* Or 100-140px for more compact layout */
+  height: 200px;
+  object-fit:cover;  /* Use 'contain' to prevent cropping important parts of logo-style icons */
+  border-radius: 50%;
+  background: rgb(252, 250, 250);    /* Optional: White bg for transparency */
+   /* Optional for emphasis */
+  display: block;
+  margin: 0;
+  border: 2px solid rgb(64, 140, 202);
+}
+
+#myskills{
+color: white;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+    word-spacing: 4px;
+   
+    font-size: 20px;
+}
+
+
+#myskills{
+  display: flex;
+  justify-content: center;
+  gap: 45px;
+  padding: 16px ;
+  margin-top: 20px;
+}
+.htmlbox, .cssbox, .jsbox {
+  border-radius: 20px;
+  border: 2px solid rgb(63, 109, 168);
+  width: fit-content;
+  padding: 16px 16px;
+  box-sizing:border-box;
+  text-align: center;
+  min-width: 200px;
+  max-width: 300px;
+
+}

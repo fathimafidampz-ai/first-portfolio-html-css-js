@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Recommendation</title>
+  <link rel="stylesheet" href="rec.css">
+</head>
+<body>
+
+     <div id="contentbody">
+     <h1>Recommendations</h1>
+      <div id="comments">
+        <ul>
+          <li>"I have been consistently impressed with FATHIMA's dedication and problem-solving skills throughout their coursework and projects. They show both initiative and strong teamwork abilities, making them an asset to any organization."</li>
+          <li>“Fathima brings remarkable energy and creativity to every project. Her ability to communicate ideas clearly and turn feedback into actionable improvements makes her an invaluable team member.”</li>
+          <li>“Working with Fathima was a wonderful experience. She quickly understood our requirements and developed solutions that exceeded expectations. Highly recommended!”</li>
+            </ul>
+          </div>
+
+
+        <div id="inputContainer">
+            <input type="text" id="recInput" placeholder="Enter your recommendation" maxlength="200"/>  
+          <br>
+          <button id="recommend_btn" onclick="addRecommendation()">Add Recommendation</button>
+        </div>
+  <ul id="recommendationsList"></ul>
+  </div>
+
+  <script>
+ function addRecommendation() {
+  const input = document.getElementById('recInput');
+  const list = document.getElementById('recommendationsList');
+  const text = input.value.trim();
+
+  if (text === '') {
+    alert('Please enter a recommendation!');
+    return;
+  }
+ 
+  const li = document.createElement('li');
+  li.textContent = text;
+  list.appendChild(li);
+
+alert('Thank you for your recommendation!');  // <-- Simple notification on submit
+
+
+  input.value = '';
+  input.focus();
+}
+ 
+</script>
+
+
+</body>

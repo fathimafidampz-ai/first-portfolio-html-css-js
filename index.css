@@ -1,0 +1,117 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior:smooth
+}
+body{
+    background-color: rgb(0, 0, 0);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#homepage{
+    position: sticky;
+    top: 0;
+    z-index: 1000; 
+    text-align:right;
+    cursor: pointer;
+    right: 20px;
+    margin-right: 80px;
+   display: flex;
+   justify-content:end;
+   margin-top: 40px;
+    gap: 60px;
+  
+
+    
+}
+ #logo {
+  position: absolute;
+  top: 20px;
+  left: 40px;
+  width: 300px;        
+  height: auto;
+  margin: 0;
+  display: block;
+ 
+}
+
+a:hover img {
+    border-bottom: 3px solid #478cdb;  /* Sky blue underline on hover */
+}
+#home{
+    width: 30px;
+    
+}
+a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+a:hover{
+    
+    text-decoration: underline ;
+    text-decoration-color: rgb(71, 140, 219);
+    text-underline-offset: 4px;
+    color: white;
+    text-decoration-thickness: 3px;
+    font-size: 20px;
+}
+
+/*.myphoto1{
+    
+    max-width: 100%;
+    margin-left: auto;
+  
+}*/
+
+.myphoto1 {
+  display: block;        /* Makes margin auto effective */
+  max-width:140%;       /* Responsive scaling within container */
+  height:auto;          /* Maintain aspect ratio */
+  margin-left: auto;     /* Pushes image to the right */
+  margin-right: 40px; 
+   margin-top: -370px;      /* Optional, to ensure no right margin */
+}
+
+
+.portfolio-heading {
+  position: relative; 
+      /* Default flow; adjust if needed */
+  left: 80px;                 /* Pushes the heading away from the left margin */
+  top: 0;                     /* Adjust as needed to place just above the next text */
+  font-size: 80px;            /* Makes heading prominent */
+  font-weight: bold;
+  margin-bottom: 10px;        /* Space above "Front-End Developer" */
+  color: #fffdfd;
+  font-family:'Poppins', sans-serif;
+}
+
+.skyblue {
+  color: skyblue;             /* Styles FATHIMA in sky blue */
+}
+
+/* (Optional) Style for the role/title */
+.role-title {
+  margin-left: 80px;          /* Aligns with heading; adjust to your preference */
+  font-size: 40px;
+  color: #ffffff;
+  
+  
+}
+#main{
+    position: relative;
+    left: 20px;
+    top: 200px;
+}
+#head2{
+    color: #ffffff;
+    display: flex;
+    margin-top: 5px;
+    margin-left: 30px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 3px;
+}   

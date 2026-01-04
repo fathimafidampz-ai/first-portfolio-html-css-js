@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal portfolio </title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="skills.css">
+    <link rel="stylesheet" href="myproj.css">
+    <link rel="stylesheet" href="rec.css">
+    
+   
+    
+</head>
+
+<body>
+    
+    <nav id="indexpage">
+    <div class="navigation">
+        <img src="myimg/FM.-removebg-preview.png" id="logo">
+        <div id="homepage">
+            <a href="#indexpage" class="navitem"><img src="myimg/icons8-home-50.png" id="home"></a>
+            <a href="#aboutmepage" class="navitem">About me</a>
+            <a href="#skillpage" class="navitem">Skills</a>
+            <a href="#projectpage" class="navitem">Projects</a>
+            <a href="#recommendationpage" class="navitem">Recommendation</a>
+        </div>
+<div id="main">
+        <div class="role-title">
+        Front-End Developer
+        </div>
+        <div class="portfolio-heading">
+          I'm <span class="skyblue">FATHIMA</span><br>
+            FIDA, From India
+        </div>
+        <div id="head2" >
+            <h1>"Designing with empathy, building with purpose."</h1>
+        </div>
+</div>
+
+            <figure>
+                <img src="myimg/WhatsApp Image 2025-07-21 at 08.57.49_c4e17781.jpg" class="myphoto1">
+            </figure>
+          
+    </div>
+    </nav>
+ 
+    <br>
+    <section id="aboutmepage">
+        
+    
+   
+    <div class="div1">
+       <h1 id="head">About Me</h1>
+     <img src="myimg/FM.-removebg-preview.png" id="logo">
+    <img src="myimg/bg.jpg" id="myphoto">
+    <h1 id="name">FATHIMA FIDA M</h1>
+    <p id="textabout">Hii..
+         I am a motivated front-end developer with a knack for creative problem-solving and delivering clean, 
+         responsive websites. With a foundation in HTML, CSS, and JavaScript,
+          I enjoy transforming ideas into interactive web experiences.
+           Organized, eager to learn, and passionate about technology,
+            I’m excited to apply my skills in a dynamic professional setting.
+         </p>
+    </div>
+
+    </section>
+    <br>
+    <section id="skillpage">
+            
+
+     <h1 id="text1">Technical Skills</h1>
+    <div class="div1">
+       
+       
+         <img src="myimg/FM.-removebg-preview.png" id="logo"> 
+        <figure id="image">
+        <img src="myimg/HTML5_logo_and_wordmark.svg-removebg-preview.png" id="htmlimg">
+        
+        <img src="myimg/CSS-Logo-2011-removebg-preview.png" id="cssimg">
+        
+        <img src="myimg/js_logo-removebg-preview.png" id="jsimg">
+        
+        </figure>
+
+        <div id="myskills">
+            <div class="htmlbox">
+            <p><h1 class="head">HTML:5</h1><BR>
+             Experienced in semantic markup and building responsive layouts
+            </p></div>
+
+            <div class="cssbox">
+            <p><h1 class="head">CSS3</h1><br>
+                Skilled in flexbox, grid, and modern transitions for visually appealing designs.
+            </p></div>
+            
+            <div class="jsbox">
+            <p><h1 class="head">JavaScript</h1><br>
+                Able to add interactivity and dynamic content to webpages using vanilla JS.
+            </p></div>
+        </div>
+    </div>
+
+
+    </section>
+    <br>
+ <section id="projectpage">
+<!--projectintee section ivade -->
+
+     <h1>My Projects</h1>
+<div id="paracontainer">
+    <div class="project-box">
+     <h3>Dynamic To-Do List or Task Manager:</h3> Create an app that lets users add, update, delete, and mark tasks as completed dynamically
+     </div>
+
+     <div class="project-box">
+    <h3>Quiz App:</h3> a Quiz app that Present a series of multiple-choice questions.Give users instant feedback and a final score at the end.
+     </div>
+
+     <div class="project-box">
+    <h3> Conversion Tool:</h3>create an app that convert Celsius to Fahrenheit
+     </div>
+
+</div>
+
+
+ </section> 
+<br>
+ <section id="recommendationpage">
+   
+  <div id="contentbody">
+     <h1>Recommendations</h1>
+      <div id="comments">
+        <ul>
+          <li>"I have been consistently impressed with FATHIMA's dedication and problem-solving skills throughout their coursework and projects. They show both initiative and strong teamwork abilities, making them an asset to any organization."</li>
+          <li>“Fathima brings remarkable energy and creativity to every project. Her ability to communicate ideas clearly and turn feedback into actionable improvements makes her an invaluable team member.”</li>
+          <li>“Working with Fathima was a wonderful experience. She quickly understood our requirements and developed solutions that exceeded expectations. Highly recommended!”</li>
+            </ul>
+          </div>
+
+
+        <div id="inputContainer">
+            <input type="text" id="recInput" placeholder="Enter your recommendation" maxlength="200"/>  
+          <br>
+          <button id="recommend_btn" onclick="addRecommendation()">Add Recommendation</button>
+        </div>
+  <ul id="recommendationsList"></ul>
+  </div>
+
+  <script>
+ function addRecommendation() {
+  const input = document.getElementById('recInput');
+  const list = document.getElementById('recommendationsList');
+  const text = input.value.trim();
+
+  if (text === '') {
+    alert('Please enter a recommendation!');
+    return;
+  }
+ 
+  const li = document.createElement('li');
+  li.textContent = text;
+  list.appendChild(li);
+
+  alert('Thank you for your recommendation!');
+
+  input.value = '';
+  input.focus();
+}
+</script>
+ </section>
+   
+
+</body>
+</html>

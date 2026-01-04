@@ -1,0 +1,96 @@
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+ body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: black;
+    color: rgb(255, 255, 255);
+    font-family: Arial, sans-serif;
+ }
+ 
+ /*body {
+      
+      background: #000000;
+      color: #eee;
+      
+     
+      padding: 20px;
+    }*/
+    input {
+      width: 300px;
+      padding: 10px;
+      border-radius: 5px;
+      border: none;
+      /*margin-right: 10px;*/
+      font-size: 1rem;
+    }
+    button {
+      padding: 10px 18px;
+      font-size: 1rem;
+      border-radius: 5px;
+      border: none;
+      background-color: #3fa2f7;
+      color: white;
+      cursor: pointer;
+      
+    }
+    button:hover {
+      background-color: #0278ff;
+    }
+    ul {
+      margin-top: 25px;
+      width: 350px;
+      list-style-type: disc;
+      padding-left: 20px;
+    }
+    ul li {
+      background-color: #2075ad;
+      padding: 10px 14px;
+      border-radius: 6px;
+      margin-bottom: 10px;
+      
+    }
+     
+    
+    h1{
+        text-align: center;
+        font-size: 40px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    #inputContainer{
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+    }
+    #comments{
+        display: flex;
+        justify-content: center;
+       
+    }
+    #inputContainer input {
+  width: 300px;
+  height:auto;
+  
+  
+  margin-right: 10px;
+}
+
+#inputContainer button{
+    width: 200px;
+height: 50px;
+
+}
+#recommendationsList {
+  display: flex;
+  flex-direction: column;
+  align-items: center;       /* Center all list items horizontally */
+  padding-left: 0;
+  margin: 0 auto;
+  max-width: 600px;
+  margin-top: 20px;
+}
